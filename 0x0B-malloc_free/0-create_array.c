@@ -6,8 +6,7 @@
  *@size: size of the array
  *@c: initial value for each index
  *
- *Return: NULL (if size = 0 or if fails to create array)
-;pointer to the array 
+ *Return: NULL (if size = 0 or if fails to create array);pointer to the array
  */
 
 char *create_array(unsigned int size, char c)
@@ -15,8 +14,6 @@ char *create_array(unsigned int size, char c)
 	char *array = NULL;
 
 	int index = 0;
-
-	//char *firstChar = array;
 
 	if (size == 0)
 	{
@@ -26,7 +23,7 @@ char *create_array(unsigned int size, char c)
 	array = malloc(size);
 
 	/*Check if malloc failed*/
-	if ( array == NULL)
+	if (array == NULL)
 	{
 		return (NULL);
 	}
