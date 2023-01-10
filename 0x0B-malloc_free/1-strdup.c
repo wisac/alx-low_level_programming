@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		strlen(str);
+		length = strlen(str);
 	}
 
 	/*Allocating memory for a string with null char*/
