@@ -14,7 +14,17 @@ char *_strdup(char *str)
 {
 	char *newString = NULL;
 
-	unsigned int length = strlen(str);
+	unsigned int length;
+
+	/*Check if NULL is passed as args*/
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+		strlen(str);
+	}
 
 	/*Allocating memory for a string with null char*/
 	newString = malloc(length + 1);
@@ -25,6 +35,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
+	/*Copy str and check if its successful*/
 	if (strcpy(newString, str))
 	{
 		return (newString);
